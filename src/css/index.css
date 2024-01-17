@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/* Reset CSS */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    background-color: #333;
+}
+
+.navbar-title > a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.navbar-items > a {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navbar-items > a:hover {
+    background: #444;
+}
+
+.navbar-item-actif {
+    background: #444;
+}
+
+header {
+    background: url("../img/frame.jpg") no-repeat center center/cover fixed;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-hr {
+    width: 25%;
+    height: 1.5rem;
+    margin: 1rem auto;
+    background: #000;
+    border: none;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.header-btn {
+    color: black;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 30px;
+}
+
+.header-btn:hover {
+    color: white;
+    background: #000;
+}
+
+#info-ventes {
+    height: 40vh;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-ventes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.items-vente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    color: black;
+    width: 30%;
+}
+
+.items-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: .5rem;
+    color: black;
+}
+
+.img-scroll {
+    width: 100%;
+    height: 60vh;
+    background: url("../img/person-1.jpg") no-repeat center center/cover;
+    background-size: 150%;
+}
+
+#reservation {
+    height: 40vh;
+    background: #FFF;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.reservation-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.reservation-subtitle {
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.reservation-btn > a {
+    color: white;
+    background: black;
+    text-decoration: none;
+    padding: .8rem;
+    border-radius: 30px;
+}
+
+.reservation-btn > a:hover {
+    color: white;
+    background: #2a2a2a;
+}
+
+.reservation-btn {
+    margin: 1rem;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container-maps {
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.maps-content {
+    margin: 0 2rem;
+}
+
+.maps-content-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.maps-content-hr {
+    margin: 1rem auto;
+}
+
+.maps-content-metro {
+    font-weight: 700;
+}
+
+.ligne-4 {
+    color: #FFF;
+    background: #FF05FF;
+    padding: .1rem .5rem;
+    border-radius: 50%;
+}
+
+.ligne-11 {
+    color: #FFF;
+    background: #A52A29;
+    padding: .1rem .5rem;
+    border-radius: 50%;
+}
+
+.contact-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.contact-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-form-item {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+}
+
+.contact-form-item > input[type="text"], input[type="email"],textarea {
+    padding: .7rem;
+    margin-top: .5rem;
+}
+
+.contact-form-item > label {
+    font-weight: 600;
+}
+
+.contact-form-item > input[type="submit"] {
+    padding: .7rem;
+    background: #000;
+    color: #FFFFFF;
+    width: max-content;
+    border: none;
+    border-radius: 30px;
+}
+
+.contact-form-item > input[type="submit"]:hover {
+    background: #FFF;
+    color: black;
+}
